@@ -1,0 +1,135 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container-nav{
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+.sidebar{
+  margin: 10px;
+  height: 850px;
+}
+.container-nav .sidebar .logo{
+  margin-bottom: 25px;
+  margin-top: 25px;
+
+}
+.container-nav .logo img{
+  width: 150px;
+  height: auto;
+
+}
+.container-top{
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  top: 0;
+}
+.container-main{
+  width: 100%;
+  height: 800px;
+  background-color: blue;
+  margin-left: 200px;
+}
+.container-player{
+  width: 100%;
+  height: 200px;
+
+  bottom: 0;
+  left: 0;
+  background-color: green;
+}
+.container-nav .navigator ul img{
+  width: 20px;
+  height: 20px;
+}
+.container-nav .navigator ul{
+  list-style: none;
+}
+.container-nav .navigator ul li a{
+  text-decoration: none;
+  color: lightgrey;
+  padding-left: 5px;
+}
+.container-nav .navigator ul li a:hover{
+  border-left: 2px solid green;
+  color: white;
+}
+.navigator{
+  margin-bottom: 20px;
+}
+.playlist h3{
+  color: white;
+  font-size: 15px;
+}
+.playlist ul{
+  list-style: none;
+}
+.playlist ul li a{
+  color: lightgrey;
+  text-decoration: none;
+}
+.playlist ul li a:hover{
+  color: white;
+}
+.playlist ul li i{
+vertical-align: middle;
+margin-right: 5px;
+}
+.container-nav .sidebar ul li{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.navigator img{
+  vertical-align: text-bottom;
+}
+.profile{
+  margin-top: 200px;
+}
+.profile img{
+  width: 20px;
+  vertical-align: text-bottom;
+}
+.profile a{
+  color: lightgrey;
+  text-decoration: none;
+}
+.profile a:last-child{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.profile a:hover{
+  color: white;
+}
+.profile
+.container-top button{
+  float: right;
+}
+.profile a{
+  margin-left: 10px;
+}
+.bottone{
+  height: 35px;
+  width: 300px;
+  border-radius: 100px;
+  float: right;
+  border: 1px solid white;
+  margin-top: 25px;
+  text-align: center;
+}
+.bottone a{
+  color: white;
+  text-decoration: none;
+  line-height: 35px;
+}
+.profile hr{
+  background-color: lightgrey;
+  border: 1px solid lightgrey;
+  margin: 10px 0;
+}
