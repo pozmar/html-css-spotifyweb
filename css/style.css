@@ -28,7 +28,7 @@ main{
 .container-player{
   width: 100%;
   height: 100px;
-  background-color: green;
+  background-color: #4e5157;
   position: fixed;
   bottom: 0;
 }
@@ -156,6 +156,8 @@ margin-left: 10px;
   align-items: center;
   padding-top: 20px;
   top: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .flex-container li a{
   color: lightgrey;
@@ -227,7 +229,7 @@ margin-left: 10px;
   color: lightgrey;
 }
 .sugg li{
-  width: 20%;
+  width: calc(100% / 6);
   height: auto;
   display: inline-block;
 }
@@ -243,10 +245,70 @@ margin-left: 10px;
 }
 .popular{
   margin-top: 20px;
+  margin-left: 20px;
 }
 .popular h3{
   color: white;
 }
 .popular p{
   color: lightgrey;
+}
+.pop{
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+}
+.pop img{
+  width: 90%;
+  height: auto;
+  border-radius: 50%;
+}
+.pop li{
+  width: calc(100% / 6);
+}
+.container-player{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.left{
+  display: flex;
+  align-items: center;
+}
+.left img{
+  width: 20%;
+  height: auto;
+}
+.left p{
+  display: inline-block;
+}
+.play{
+  text-align: center;
+
+}
+.center .line{
+  height: 2px;
+  width: 50px;
+  background-color: grey;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+.right{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+.volume{
+  height: 2px;
+  width: 100px;
+  background-color: grey;
+  margin-left: 5px;
+  margin-right: 10px;
+  align-self: center;
+
+
+
 }
