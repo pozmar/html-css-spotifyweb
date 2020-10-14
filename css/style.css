@@ -3,60 +3,63 @@
   margin: 0;
   box-sizing: border-box;
 }
-.container-nav{
-  width: 200px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: black;
+html{
+  font-family: "Roboto", sans-serif;
+}
+main{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
 }
 .sidebar{
-  margin: 10px;
-  height: 850px;
-}
-.container-nav .sidebar .logo{
-  margin-bottom: 25px;
-  margin-top: 25px;
-
-}
-.container-nav .logo img{
-  width: 150px;
-  height: auto;
-
-}
-.container-top{
-  width: 100%;
-  height: 80px;
+  width: 200px;
+  height: calc(100% - 100px);
   background-color: black;
-  top: 0;
 }
 .container-main{
-  width: 100%;
-  height: 800px;
-  background-color: blue;
-  margin-left: 200px;
+  width: calc(100% - 200px);
+  height: calc(100% - 100px);
+  background-color: #2a2b2b;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 .container-player{
   width: 100%;
-  height: 200px;
-
-  bottom: 0;
-  left: 0;
+  height: 100px;
   background-color: green;
+  position: fixed;
+  bottom: 0;
 }
-.container-nav .navigator ul img{
+.sidebar .logo{
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.sidebar .logo img{
+  width: 150px;
+  height: auto;
+}
+.sidebar .side-header{
+  width: 100%;
+  height: calc(100% - 80px);
+}
+.side-header, .profile{
+margin-left: 10px;
+}
+.navigator ul img{
   width: 20px;
   height: 20px;
 }
-.container-nav .navigator ul{
+.navigator ul{
   list-style: none;
 }
-.container-nav .navigator ul li a{
+.navigator ul li a{
   text-decoration: none;
   color: lightgrey;
   padding-left: 5px;
 }
-.container-nav .navigator ul li a:hover{
+.navigator ul li a:hover{
   border-left: 2px solid green;
   color: white;
 }
@@ -78,10 +81,10 @@
   color: white;
 }
 .playlist ul li i{
-vertical-align: middle;
-margin-right: 5px;
+  vertical-align: middle;
+  margin-right: 5px;
 }
-.container-nav .sidebar ul li{
+.sidebar ul li{
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -89,7 +92,9 @@ margin-right: 5px;
   vertical-align: text-bottom;
 }
 .profile{
-  margin-top: 200px;
+  width: 100%;
+  height: 80px;
+  min-width: 300px;
 }
 .profile img{
   width: 20px;
@@ -107,21 +112,29 @@ margin-right: 5px;
 .profile a:hover{
   color: white;
 }
-.profile
-.container-top button{
-  float: right;
-}
+
 .profile a{
   margin-left: 10px;
+}
+.box-button{
+  position: fixed;
+  display: flex;
+  top: 0;
+  right: 0;
+  width: calc(100% -  200px);
+  height: 80px;
+  justify-content: flex-end;
+  background-color: black;
+  z-index: 1;
 }
 .bottone{
   height: 35px;
   width: 300px;
   border-radius: 100px;
-  float: right;
   border: 1px solid white;
   margin-top: 25px;
   text-align: center;
+
 }
 .bottone a{
   color: white;
@@ -131,5 +144,109 @@ margin-right: 5px;
 .profile hr{
   background-color: lightgrey;
   border: 1px solid lightgrey;
-  margin: 10px 0;
+  margin: auto;
+
+}
+.flex-container{
+  display: flex;
+  margin-top: 80px;
+  list-style: none;
+  justify-content: space-around;
+  max-width: 800px;
+  align-items: center;
+  padding-top: 20px;
+  top: 0;
+}
+.flex-container li a{
+  color: lightgrey;
+  text-decoration: none;
+  position:relative;
+}
+.flex-container li a:hover{
+  color: white;
+}
+.flex-container li a:hover::before{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 1px;
+  width: 50%;
+  border-bottom: 2px solid green;
+  margin: 0 25%;
+  color: white;
+}
+.my_container{
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.my_container a{
+  text-decoration: none;
+}
+.text-r{
+  text-align: left;
+  color: white;
+}
+.recent{
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.recent li{
+  display: inline-block;
+  width: 20%;
+
+}
+.recent img{
+  width: 90%;
+  height: auto;
+}
+.recent h3, .recent p{
+  display: inline-block;
+
+}
+.recent h3{
+  color: white;
+}
+.recent p{
+  color: lightgrey;
+}
+.sugg{
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+
+}
+.create{
+  margin-top: 20px;
+}
+.create h3{
+  color: white;
+}
+.create p{
+  color: lightgrey;
+}
+.sugg li{
+  width: 20%;
+  height: auto;
+  display: inline-block;
+}
+.sugg img{
+  width: 90%;
+  height: auto;
+}
+.sugg h3{
+  color: white;
+}
+.sugg p{
+  color: lightgrey;
+}
+.popular{
+  margin-top: 20px;
+}
+.popular h3{
+  color: white;
+}
+.popular p{
+  color: lightgrey;
 }

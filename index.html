@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Spotify</title>
 </head>
@@ -11,8 +13,9 @@
   <main>
 
 
-    <section class="container-nav">
-      <div class="sidebar">
+    <section class="sidebar">
+
+      <div class="side-header">
         <div class="logo">
           <img src="img/logo.svg" alt="logo">
         </div>
@@ -37,24 +40,67 @@
             <li><a href="#">Nome Playlist</a></li>
           </ul>
         </nav>
-        <div class="profile">
-          <img src="img/download.svg" alt="download"><a href="#">Installa App</a>
-          <hr>
-          <img src="img/profile.svg" alt="profile"><a href="#">John Doe</a>
+      </div>
+
+      <div class="profile">
+        <img src="img/download.svg" alt="download"><a href="#">Installa App</a>
+        <hr>
+        <img src="img/profile.svg" alt="profile"><a href="#">John Doe</a>
+      </div>
+
+
+
+
+
+    </section>
+
+    <section  class="container-main">
+      <div class="box-button">
+        <div class="bottone">
+          <a href="#">EFFETTUA L'UPGRADE</a>
         </div>
 
-
-
-
       </div>
-    </section>
-    <section class="container-top">
-      <div class="bottone">
-        <a href="#">EFFETTUA L'UPGRADE</a>
-      </div>
-    </section>
-    <section class="container-main">
 
+      <ul class="flex-container">
+        <li><a href="#">IN EVIDENZA</a></li>
+        <li><a href="#">PODCAST</a></li>
+        <li><a href="#">CLASSIFICHE</a></li>
+        <li><a href="#">GENERI E MOOD</a></li>
+        <li><a href="#">NUOVE USCITE</a></li>
+        <li><a href="#">SCOPRI</a></li>
+      </ul>
+
+      <div class="my_container">
+
+          <h3 class="text-r">Recently Played</h3>
+
+
+          <ul class="recent">
+            <li><a href="#"><img src="img/metal_lifting.jpg" alt="metal"><h3>Heavy Metal</h3> <br>
+              <p>Subtitle</p></a></li>
+            <li><a href="#"><img src="img/stranger.jpeg" alt="stranger"><h3>Stranger Things, Vol 1. 8A Netflix Original Series Soundtrack)</h3><br> <p>Kyle Dixon & Michael Stein</p></a></li>
+            <li><a href="#"><img src="img/aquietplace.jpeg" alt="place"><h3>A quiet place</h3><br> <p>Subtitle</p>  </a></li>
+            <li><a href="#"><img src="img/split.jpeg" alt="split"><h3>Split</h3><br> <p>Subtitle</p>  </a></li>
+            <li><a href="#"><img src="img/cure.jpeg" alt="cure"><h3>A cure for wellness</h3><br> <p>Subtitle</p>  </a></li>
+            <li><a href="#"><img src="img/sinister.jpeg" alt="sinister"><h3>Sinister</h3><br> <p>Subtitle</p>  </a></li>
+
+          </ul>
+        <div class="create">
+<h3>Creato per John Doe</h3> <br>
+<p>Più ascolti, più accurati saranno i suggerimenti</p>
+        </div>
+
+<ul class="sugg">
+<li><a href="#"><img src="img/radar.jpeg" alt=""><h3>Release Radar</h3> </a> </li>
+<li><a href="#"><img src="img/mixdaily.jpeg" alt=""><h3>Daily Mix 1</h3> </a> </li>
+</ul>
+
+  </div>
+  <div class="popular">
+<h3>Artisti più popolari</h3> <br>
+<p>Più ascolti, più saranno accurati i suggerimenti</p>
+  </div>
     </section>
     <section class="container-player">
 
