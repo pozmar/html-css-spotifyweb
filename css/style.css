@@ -1,11 +1,14 @@
+/*RESET*/
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+/*FONT*/
 html{
   font-family: "Roboto", sans-serif;
 }
+/*MAIN*/
 main{
   width: 100%;
   height: 100vh;
@@ -13,6 +16,7 @@ main{
   display: flex;
   flex-wrap: wrap;
 }
+/*STRUTTURA GENERALE DELLE TRE SEZIONI*/
 .sidebar{
   width: 200px;
   height: calc(100% - 100px);
@@ -37,6 +41,7 @@ main{
   position: fixed;
   bottom: 0;
 }
+/*LOGHI*/
 .small-logo{
   display: none;
 }
@@ -49,6 +54,7 @@ main{
   width: 150px;
   height: auto;
 }
+/*SIDEBAR*/
 .sidebar .side-header{
   width: 100%;
   height: calc(100% - 80px);
@@ -56,17 +62,21 @@ main{
 }
 .side-header, .profile{
   margin-left: 10px;
-
 }
 .list-w{
   display: inline-block;
 }
-.navigator ul img{
-  width: 20px;
-  height: 20%;
+.navigator{
+  width: 100%;
+  height: 25%;
 }
 .navigator ul{
   list-style: none;
+}
+.navigator ul img{
+  width: 20px;
+  height: 20%;
+  vertical-align: text-bottom;
 }
 .navigator ul li a{
   text-decoration: none;
@@ -77,15 +87,10 @@ main{
   border-left: 2px solid green;
   color: white;
 }
-.navigator{
-  width: 100%;
-  height: 25%;
-}
 .playlist{
   width: 100%;
   height: 55%;
   overflow-y: auto;
-
 }
 .playlist::-webkit-scrollbar{
   display: none;
@@ -112,9 +117,6 @@ main{
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.navigator img{
-  vertical-align: text-bottom;
-}
 .profile{
   width: 100%;
   height: 80px;
@@ -127,6 +129,7 @@ main{
 .profile a{
   color: lightgrey;
   text-decoration: none;
+  margin-left: 10px;
 }
 .profile a:last-child{
   color: white;
@@ -136,11 +139,13 @@ main{
 .profile a:hover{
   color: white;
 }
-
-.profile a{
-  margin-left: 10px;
+.profile hr{
+  background-color: lightgrey;
+  border: 1px solid lightgrey;
+  margin: auto;
 }
-.box-button{
+/*BUTTON*/
+.button{
   position: fixed;
   display: flex;
   top: 0;
@@ -158,19 +163,14 @@ main{
   border: 1px solid white;
   margin-top: 25px;
   text-align: center;
-
 }
 .bottone a{
   color: white;
   text-decoration: none;
   line-height: 35px;
 }
-.profile hr{
-  background-color: lightgrey;
-  border: 1px solid lightgrey;
-  margin: auto;
 
-}
+/*FLEX-CONTAINER*/
 .flex-container{
   display: flex;
   margin-top: 80px;
@@ -204,6 +204,7 @@ main{
   margin: 0 25%;
   color: white;
 }
+/*MY_CONTAINER*/
 .my_container{
   margin-top: 30px;
   margin-left: 10px;
@@ -244,7 +245,6 @@ main{
 .recent p{
   color: lightgrey;
 }
-
 /*.recent .overlay::before{
   content: "\f144";
   font-family: "Font Awesome 5 Free";
@@ -318,6 +318,7 @@ main{
 .pop li{
   width: calc(100% / 6);
 }
+/*CONTAINER-PLAYER*/
 .container-player{
   display: flex;
   justify-content: space-between;
@@ -383,9 +384,6 @@ margin-right: 10px;
   margin-right: 10px;
   align-self: center;
   position: relative;
-}
-.volume:hover{
-
 }
 .volume::before{
   content: "";
